@@ -9,7 +9,7 @@ and shared between every member of your team.
 
 Let's suppose you want to contribute to an open-source project or any repository for which you do _not_ have direct write access. You can still contribute via pull requests from a forked version of the main repository.
 
-Here is a recommended workflow:
+Here is the recommended workflow:
 
 ## Fork and clone
 * Your team lead should fork the repository of interest (the one you want to contribute to, but you don't have direct write access). This will be your team's "upstream repo".
