@@ -16,11 +16,7 @@ Here is a recommended workflow:
 * All other team members should fork the upstream repo. Before they can do so, the team lead will need to them as collaborators on github.com.
 * Everyone clones their own forked repo to their own local machine.
 * By default your remote origin (e.g. from where you push/pull) will be the address you used when you cloned the repository to your machine. For example: `https://github.com/Ecohen4/git_workflow.git`
-<<<<<<< HEAD
-* You can add additional remotes to keep your repository in sync. `git remote add <partner-name> <partner-remote-URL>`
-=======
 * You can add additional remotes to keep your repository in sync. `git remote add <upstream> <upstream-remote-URL>`
->>>>>>> feature_1
 * You can check all of your branches (local & remote) along with their latest commits: `git branch -avv`
 
 ## Branches
