@@ -9,14 +9,18 @@ and shared between every member of your team.
 
 Let's suppose you want to contribute to an open-source project or any repository for which you do _not_ have direct write access. You can still contribute via pull requests from a forked version of the main repository.
 
-Here is the recommended workflow:
+Here is a recommended workflow:
 
 ## Fork and clone
 * Your team lead should fork the repository of interest (the one you want to contribute to, but you don't have direct write access). This will be your team's "upstream repo".
 * All other team members should fork the upstream repo. Before they can do so, the team lead will need to them as collaborators on github.com.
 * Everyone clones their own forked repo to their own local machine.
 * By default your remote origin (e.g. from where you push/pull) will be the address you used when you cloned the repository to your machine. For example: `https://github.com/Ecohen4/git_workflow.git`
+<<<<<<< HEAD
 * You can add additional remotes to keep your repository in sync. `git remote add <partner-name> <partner-remote-URL>`
+=======
+* You can add additional remotes to keep your repository in sync. `git remote add <upstream> <upstream-remote-URL>`
+>>>>>>> feature_1
 * You can check all of your branches (local & remote) along with their latest commits: `git branch -avv`
 
 ## Branches
@@ -27,11 +31,12 @@ Here is the recommended workflow:
   * `git commit -m <something useful>`. Your commit messages serve as documentation and communication for your team.
   Example of a _good_ commit message: "add private method to feature engineering class to one-hot-encode categorical variables".
   Examples of a _useless_ commit message: "stuff", "commit", "bug fix".
-  * `git push origin feature_1`, `git pull -r origin master`. Be explicit about which remote branch you want when you push/pull.
+  * `git push origin feature_1`, `git pull -r upstream master`. Be explicit about which remote branch you want when you push/pull.
 
 ## Pull requests
 * Once a useful chunk of work is complete, issue a pull request to merge your branch with the upstream repo.
 * The owner of the upstream repo can accept your pull request and merge it into the upstream master branch, then delete your feature branch.
+* `git pull -r upstream master` for all collaborators to get the latest changes.
 * Iterate frequently.
 
 ## Merging
